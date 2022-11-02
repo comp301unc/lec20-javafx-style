@@ -22,28 +22,36 @@ public class App extends Application {
 
     // The scoreboard goes at the top of the board
     Pane scoreboard = new HBox();
+    scoreboard.getStyleClass().add("scoreboard");
     layout.getChildren().add(scoreboard);
 
     // The scoreboard has a logo
     Pane logoContainer = new HBox();
     Label logo = new Label("2048");
+    logo.getStyleClass().add("logo");
     logoContainer.getChildren().add(logo);
     HBox.setHgrow(logoContainer, Priority.ALWAYS);
     scoreboard.getChildren().add(logoContainer);
 
     // The scoreboard shows the current score
     Pane score = new VBox();
+    score.getStyleClass().add("score");
     Label scoreLabel = new Label("SCORE");
+    scoreLabel.getStyleClass().add("score-label");
     score.getChildren().add(scoreLabel);
     Label scoreValue = new Label("2268");
+    scoreValue.getStyleClass().add("score-value");
     score.getChildren().add(scoreValue);
     scoreboard.getChildren().add(score);
 
     // The scoreboard also shows the best score
     Pane best = new VBox();
+    best.getStyleClass().add("score");
     Label bestLabel = new Label("BEST");
+    bestLabel.getStyleClass().add("score-label");
     best.getChildren().add(bestLabel);
     Label bestValue = new Label("2268");
+    bestValue.getStyleClass().add("score-value");
     best.getChildren().add(bestValue);
     scoreboard.getChildren().add(best);
 

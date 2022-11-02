@@ -5,3 +5,45 @@
   -fx-font-size: 12px;
   -fx-padding: 10px;
 }
+
+.scoreboard {
+  -fx-alignment: center-right;
+  -fx-spacing: 10px;
+}
+
+.logo {
+/*
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #ecc400;
+  -fx-pref-width: 60px;
+  -fx-pref-height: 60px;
+  -fx-border-radius: 4px;
+  -fx-background-radius: 4px;
+  -fx-font-size: 22px;
+  -fx-alignment: center;
+  */
+}
+
+.score {
+/*
+  -fx-background-color: #bbada1;
+  -fx-background-radius: 4px;
+  -fx-padding: 10;
+  -fx-alignment: center;
+  */
+}
+
+.score-label {
+/*
+  -fx-text-fill: #ffffff;
+  -fx-font-size: 8px;
+  */
+}
+
+.score-value {
+/*
+  -fx-text-fill: #ffffff;
+  -fx-font-size: 20px;
+*/
+}
+
