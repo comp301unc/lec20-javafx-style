@@ -63,8 +63,8 @@ public class App extends Application {
 
     // The game board goes at the bottom of the layout
     GridPane board = new GridPane();
-    // board.setHgap(10);
-    // board.setVgap(10);
+    board.setHgap(10);
+    board.setVgap(10);
     board.getStyleClass().add("board");
     layout.getChildren().add(board);
 
@@ -107,6 +107,7 @@ public class App extends Application {
       tile = new Label(String.valueOf(num));
     }
     tile.getStyleClass().add("tile");
+    tile.getStyleClass().add("tile-" + num);
     return tile;
   }
 }
