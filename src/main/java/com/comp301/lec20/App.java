@@ -27,7 +27,7 @@ public class App extends Application {
     Pane logoContainer = new HBox();
     Label logo = new Label("2048");
     logoContainer.getChildren().add(logo);
-    // HBox.setHgrow(logoContainer, Priority.ALWAYS);
+    HBox.setHgrow(logoContainer, Priority.ALWAYS);
     scoreboard.getChildren().add(logoContainer);
 
     // The scoreboard shows the current score
@@ -55,6 +55,24 @@ public class App extends Application {
     GridPane board = new GridPane();
     layout.getChildren().add(board);
 
+    // Fill up the board with tiles
+    board.add(makeTile(0), 0, 0);
+    board.add(makeTile(2), 1, 0);
+    board.add(makeTile(8), 2, 0);
+    board.add(makeTile(4), 3, 0);
+    board.add(makeTile(16), 0, 1);
+    board.add(makeTile(64), 1, 1);
+    board.add(makeTile(4), 2, 1);
+    board.add(makeTile(2), 3, 1);
+    board.add(makeTile(8), 0, 2);
+    board.add(makeTile(4), 1, 2);
+    board.add(makeTile(32), 2, 2);
+    board.add(makeTile(4), 3, 2);
+    board.add(makeTile(2), 0, 3);
+    board.add(makeTile(256), 1, 3);
+    board.add(makeTile(8), 2 ,3);
+    board.add(makeTile(2), 3, 3);
+
     // Set the Scene
     Scene scene = new Scene(layout, 350, 450);
     stage.setScene(scene);
@@ -66,4 +84,15 @@ public class App extends Application {
   public static void main(String[] args) {
     launch();
   }
+
+  private static Label makeTile(int num) {
+    Label tile;
+    if (num == 0) {
+      tile = new Label();
+    } else {
+      tile = new Label(String.valueOf(num));
+    }
+    return tile;
+  }
 }
+
