@@ -23,6 +23,30 @@ public class App extends Application {
     Pane scoreboard = new HBox();
     layout.getChildren().add(scoreboard);
 
+    // The scoreboard has a logo
+    Pane logoContainer = new HBox();
+    Label logo = new Label("2048");
+    logoContainer.getChildren().add(logo);
+    HBox.setHgrow(logoContainer, Priority.ALWAYS);
+    scoreboard.getChildren().add(logoContainer);
+
+    // The scoreboard shows the current score
+    Pane score = new VBox();
+    Label scoreLabel = new Label("SCORE");
+    score.getChildren().add(scoreLabel);
+    Label scoreValue = new Label("2268");
+    score.getChildren().add(scoreValue);
+    scoreboard.getChildren().add(score);
+
+    // The scoreboard also shows the best score
+    Pane best = new VBox();
+    Label bestLabel = new Label("BEST");
+    best.getChildren().add(bestLabel);
+    Label bestValue = new Label("2268");
+    best.getChildren().add(bestValue);
+    scoreboard.getChildren().add(best);
+
+
     // Add the instructions to the layout
     Label instructions = new Label("Join the numbers and get to the 2048 tile!");
     layout.getChildren().add(instructions);
