@@ -18,6 +18,7 @@ public class App extends Application {
 
     // Create new Pane objects to hold the UI components
     Pane layout = new VBox();
+    layout.getStyleClass().add("layout");
 
     // The scoreboard goes at the top of the board
     Pane scoreboard = new HBox();
@@ -75,6 +76,7 @@ public class App extends Application {
 
     // Set the Scene
     Scene scene = new Scene(layout, 350, 450);
+    scene.getStylesheets().add("style/main.css");
     stage.setScene(scene);
 
     // Show the Stage on the screen

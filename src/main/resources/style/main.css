@@ -1,0 +1,7 @@
+.layout {
+  -fx-background-color: #faf8f0;
+  -fx-font-family: Arial, sans-serif;
+  -fx-font-weight: bold;
+  -fx-font-size: 12px;
+  -fx-padding: 10px;
+}
