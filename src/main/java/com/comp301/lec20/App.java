@@ -27,7 +27,7 @@ public class App extends Application {
     Pane logoContainer = new HBox();
     Label logo = new Label("2048");
     logoContainer.getChildren().add(logo);
-    HBox.setHgrow(logoContainer, Priority.ALWAYS);
+    // HBox.setHgrow(logoContainer, Priority.ALWAYS);
     scoreboard.getChildren().add(logoContainer);
 
     // The scoreboard shows the current score
