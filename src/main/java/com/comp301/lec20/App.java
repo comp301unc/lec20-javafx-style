@@ -58,10 +58,14 @@ public class App extends Application {
 
     // Add the instructions to the layout
     Label instructions = new Label("Join the numbers and get to the 2048 tile!");
+    instructions.getStyleClass().add("instructions");
     layout.getChildren().add(instructions);
 
     // The game board goes at the bottom of the layout
     GridPane board = new GridPane();
+    // board.setHgap(10);
+    // board.setVgap(10);
+    board.getStyleClass().add("board");
     layout.getChildren().add(board);
 
     // Fill up the board with tiles
@@ -102,6 +106,7 @@ public class App extends Application {
     } else {
       tile = new Label(String.valueOf(num));
     }
+    tile.getStyleClass().add("tile");
     return tile;
   }
 }

@@ -12,7 +12,6 @@
 }
 
 .logo {
-/*
   -fx-text-fill: #ffffff;
   -fx-background-color: #ecc400;
   -fx-pref-width: 60px;
@@ -21,29 +20,44 @@
   -fx-background-radius: 4px;
   -fx-font-size: 22px;
   -fx-alignment: center;
-  */
 }
 
 .score {
-/*
   -fx-background-color: #bbada1;
   -fx-background-radius: 4px;
   -fx-padding: 10;
   -fx-alignment: center;
-  */
 }
 
 .score-label {
-/*
   -fx-text-fill: #ffffff;
   -fx-font-size: 8px;
-  */
 }
 
 .score-value {
-/*
   -fx-text-fill: #ffffff;
   -fx-font-size: 20px;
+}
+
+.instructions {
+  -fx-text-fill: #766f65;
+  -fx-padding: 10 0 10 0; /* top, right, bottom, left */
+}
+
+.board {
+/*
+  -fx-background-color: #bbada1;
+  -fx-padding: 10px;
 */
 }
 
+.tile {
+/*
+  -fx-pref-width: 70px;
+  -fx-pref-height: 70px;
+  -fx-font-size: 34px;
+  -fx-alignment: center;
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #f1d04c;
+*/
+}
